@@ -1,19 +1,38 @@
+/* padding order: [all] -> [top/bottom - right/left] -> [top - right/left - bottom] [top - right - bottom - left] */
+
 body {
     background-color: whitesmoke;
     color: #6998AB;
 }
 
-.tabs {
-    color: #6998AB;
-    font-size: 20px;
-    font-family: monospace;
-
-    text-decoration: none;
-    padding-left: 5px;
-    padding-right: 5px;
+p {
+    font-size: 17px;
+    width: 700px;
+    /* text-align: justify 
+    text-justify: inter-word */
 }
 
-/* h2 and all paragraphs */
+.fadein {
+    animation: fadeIn 0.2s;
+    -webkit-animation: fadeIn 0.2s;
+    -moz-animation: fadeIn 0.2s;
+    -o-animation: fadeIn 0.2s;
+    -ms-animation: fadeIn 0.2s;
+}
+
+.tabs {
+    padding: 30px 0px 15px;
+    font-size: 20px;
+}
+
+/* looking for any <a> that is a descendant of class tabs */
+.tabs a {
+    color: #6998AB;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 .text {
     font-family: monospace;
 }
@@ -22,18 +41,16 @@ body {
 .socials {
     width: 22px;
     height: auto;
-}
-
-#intro {
-    font-size: 15px;
-    width: 700px;
-    /* text-align: justify 
-    text-justify: inter-word */
+    padding: 15px 5px 20px;
 }
 
 #jellyfish {
     width: 500px;
     height: auto;
+}
+
+.about-me {
+    font-size: 17px;
 }
 
 /* shrinks width of image when viewport <= 500px */
@@ -49,6 +66,31 @@ body {
         /* max-width: 75px; */
         width: 25%;
     }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 /* #water {
