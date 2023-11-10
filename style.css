@@ -7,9 +7,8 @@ body {
 
 p {
     font-size: 17px;
-    width: 700px;
-    /* text-align: justify 
-    text-justify: inter-word */
+    /* update */
+    width: 700px; 
 }
 
 .fadein {
@@ -31,6 +30,7 @@ p {
     text-decoration: none;
     padding-right: 10px;
     padding-left: 10px;
+
 }
 
 .text {
@@ -49,11 +49,8 @@ p {
     height: auto;
 }
 
-.about-me {
-    font-size: 17px;
-}
-
 /* shrinks width of image when viewport <= 500px */
+/* update */
 @media only screen and (max-width:500px) {
     #jellyfish {
         width: 125px;
